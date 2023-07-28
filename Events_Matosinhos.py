@@ -21,7 +21,6 @@ def formata(palavra):
 
   return palavra
 
-from Levenshtein import distance as lev
 def score(pa,pb):
   return 1 - ( lev(pa,pb) / max(len(pa),len(pb)))
 
